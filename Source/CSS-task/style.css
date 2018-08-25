@@ -93,11 +93,16 @@ body {
     justify-content: space-around;
 }
 
-.flex-item{
+.flex-row{
     height: 100px;
-    margin: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-item{
+    margin: 20px;
+    display: flex;
     justify-content: space-around;
 }
 
