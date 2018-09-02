@@ -1,0 +1,34 @@
+.gray{
+    background: #3c3c3c;
+}
+
+.black{
+    background: black;
+}
+
+.max-width{
+    max-width: 100%;
+}
+
+.bg-icons{
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../Images/social-media-icons.jpg");
+    background-size: 283px 158px;
+}
+
+.bg-facebook{
+    background-position: -22px -30px;
+}
+
+.bg-twitter{
+    background-position: -22px -74px;
+}
+
+.bg-snapchat{
+    background-position: -232px -118px;
+}
