@@ -1,0 +1,69 @@
+.gray{
+    background: #3c3c3c;
+}
+
+.black{
+    background: black;
+}
+
+.max-width{
+    max-width: 100%;
+}
+
+.bg-icons{
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../Images/social-media-icons.jpg");
+    background-size: 283px 158px;
+}
+
+.bg-facebook{
+    background-position: -22px -30px;
+}
+
+.bg-twitter{
+    background-position: -22px -74px;
+}
+
+.bg-snapchat{
+    background-position: -232px -118px;
+}
+
+.aliceblue{
+    background-color: aliceblue;
+}
+
+#main-content{
+    float: none;
+}
+
+#main-content .img{
+    width: 250px;
+    height: 250px;
+    object-fit: scale-down;
+}
+
+#main-content .like-img{
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    object-fit: scale-down;
+}
+
+.main-logo{
+    height: 500px;
+    width: 100%;
+    object-fit: none;
+}
+
+#logo{
+    background-image: url("../Images/kali.png");
+    background-position: -300px -200px;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}

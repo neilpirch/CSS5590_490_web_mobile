@@ -1,0 +1,85 @@
+{
+  "name":"John",
+  "board":[
+    {
+      "name": "Betrayal at House on the Hill",
+      "image": "Images/betrayal.jpeg",
+      "price": "$49.99",
+      "flavor": "Set off with a group of friends to explore the mysterious House on the Hill. Collect interesting artifacts on your journey, but beware. Someone in your midst may not be who you thought they were..."
+    },
+    {
+      "name": "Secret Hitler",
+      "image": "Images/secret-hitler.jpg",
+      "price": "$39.99",
+      "flavor": "It's 1930's Germany and the third reich is amassing power. Can the Liberals stop the Fascists from destroying liberty? Will the Fascists elect Hitler to power? You must figure out who's who in this game of secret identities."
+    },
+    {
+      "name": "Settlers of Catan",
+      "image": "Images/catan.png",
+      "price": "$29.99",
+      "flavor": "On the island of Catan resources abound, if the dice are in your favor. Build settlements, roads, and cities in your quest to achieve dominance on the tiny island."
+    },
+    {
+      "name": "Pandemic",
+      "image": "Images/pandemic.jpg",
+      "price": "$44.99",
+      "flavor": "Four deadly diseases are plaguing humanity. It's up to you and your friends to scour the globe in search of the cure. Plan carefully, there are many ways to lose, but only one way to win."
+    },
+    {
+      "name": "Lanterns",
+      "image": "Images/lanterns.jpg",
+      "price": "$24.99",
+      "flavor": "The harvest festival is upon us. Decorate the palace with lanterns carefully to earn points for yourself and block your opponents."
+    },
+    {
+      "name": "Carcassonne",
+      "image": "Images/carcassonne.jpg",
+      "price": "$59.99",
+      "flavor": "Build your settlements using tile pieces. The larger your settlements, the more meeples you earn."
+    }
+  ],
+  "rpg":[
+    {
+      "name": "Dungeons and Dragons - Player's Handbook",
+      "image": "Images/dnd-players.jpeg",
+      "price": "$24.99",
+      "flavor": "The essential handbook for any adventurer looking to escape into a medieval type fantasy world."
+    },
+    {
+      "name": "Dungeons and Dragons - Dungeon Master's Guide",
+      "image": "Images/dnd-dm-guide.jpeg",
+      "price": "$24.99",
+      "flavor": "No idea how to tell a story? Need tips on setting up a campaign? Grab the Dungeon Master's guide to help you craft an experience that will leave your players begging for more."
+    },
+    {
+      "name": "Dungeons and Dragons - Monster Manual",
+      "image": "Images/dnd-monster.jpeg",
+      "price": "$24.99",
+      "flavor": "What's a campaign without something to slay? You need to sate your players insatiable blood-lust as they quickly become murder hobos and leave your carefully crafted story in the dust. Find interesting ways to make their lives miserable as punishment with the Monster Manual."
+    },
+    {
+      "name": "Mage: The Ascension",
+      "image": "Images/mage.jpg",
+      "price": "$14.99",
+      "flavor": "Master the arcane arts as you dive into a gothic, modern-day setting. Craft spells carefully to avoid accidentally driving yourself insane..."
+    },
+    {
+      "name": "Vampire: The Masquerade",
+      "image": "Images/vampire.jpg",
+      "price": "$29.99",
+      "flavor": "Who knew there were so many different types of undead? Choose from a variety of houses, pick your powers, and immerse yourself as your hide among the mere mortals you need to feed off of to survive."
+    },
+    {
+      "name": "Werewolf: The Apocolypse",
+      "image": "Images/werewolf.jpg",
+      "price": "$14.99",
+      "flavor": "Choose your personality based on astrology and take control of your very own Werewolf. Take wolf form, or shift into beast mode in the heat of battle."
+    },
+    {
+      "name": "Call of Cthulhu",
+      "image": "Images/cthulhu.jpg",
+      "price": "$27.99",
+      "flavor": "Investigate the occult in this horror setting. Battle against the forces of evil as they attempt to summon the evil one."
+    }
+  ]
+}
