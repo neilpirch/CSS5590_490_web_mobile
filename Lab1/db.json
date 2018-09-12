@@ -1,4 +1,24 @@
 {
+  "account":[
+    {
+      "name": "Account Details",
+      "image": "Images/Smeagol.jpg",
+      "price": "",
+      "flavor": "If you have recently leveled up, click here to update your stats. If you have recently moved, click here to update your address."
+    },
+    {
+      "name": "Recent Orders",
+      "image": "Images/store.jpg",
+      "price": "",
+      "flavor": "Check the status of orders from the last fortnite or so. Check shipment details for current orders."
+    },
+    {
+      "name": "All Order History",
+      "image": "Images/old-store.jpg",
+      "price": "",
+      "flavor": "View orders from time immemorial."
+    }
+  ],
   "name":"John",
   "board":[
     {
