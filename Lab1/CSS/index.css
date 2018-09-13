@@ -37,6 +37,10 @@
     background-color: aliceblue;
 }
 
+.lightgreen{
+    background-color: #94FD90;
+}
+
 #main-content{
     float: none;
 }
@@ -66,4 +70,16 @@
     height: 400px;
     width: 100%;
     overflow: hidden;
+}
+
+.middle-left{
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+}
+
+.middle-right{
+    position: absolute;
+    bottom: 50%;
+    right: 10%;
 }
