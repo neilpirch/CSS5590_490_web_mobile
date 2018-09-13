@@ -1,5 +1,6 @@
 # The Super Real Store
 
+[![Lab 1 Video](http://img.youtube.com/vi/rG_ry1hkFXg/0.jpg)](http://www.youtube.com/watch?v=rG_ry1hkFXg "Lab 1 Video")
 
 
 ## Introduction
@@ -139,9 +140,10 @@ A footer was created in the base HTML, which includes social media links and a c
 
 
 ## Workflow
-David Walsh designed the layout of the web site, and implemented the original HTML code and javascript functionality. Neil Pirch added the Account Details page and worked on this report.
+David Walsh designed the layout of the web site, and implemented the original HTML code and javascript functionality. Neil Pirch added the Account Details page and built this documentation.
 
 ## Discussion
-
+This project created opportunities to implement a variety of web technologies in a real-world style application. The skills, tools, and coding practices used in this project are high-leverage fundamentals for professional web developers. 
 
 ## Conclusion
+This project was engaging, the problem was aligned to professional demands, and the challenge to incorporate a range of technologies made the task rigorous.
