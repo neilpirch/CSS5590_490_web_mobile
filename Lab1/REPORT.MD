@@ -98,6 +98,83 @@ The result is a responsive product description
  
 The Account Details page was created as a separate HTML page, using the same CSS styling.
 
+A link from the Account Details page was created to take users to the Order History page. Similarly to the Product Subcategory pages, the Order history is generated dynamically using JSON database entries:
+
+```sh
+"orders":[
+    {
+      "order_num":314159,
+      "order_date":"04 Jul 2018",
+      "items":[
+        {
+          "id": 100,
+          "price_paid": 45.99
+        },
+        {
+          "id":103,
+          "price_paid":45.99
+        }
+      ]
+    },
+ ```
+    
+ Additional Javascript appends responsive elements to the body of the page, and calculates order totals.
+ 
+ ```sh
+    function loadOrderPage(orderList, products){
+
+    let color = "lightgreen";
+    let rowNum = 1;
+    $.each(orderList, function(order){
+        let orderItem = orderList[order];
+        let orderNum = orderItem["order_num"];
+        orderNumRow(rowNum, orderNum);
+        let total = 0;
+        let orderItemList = orderItem["items"];
+        $.each(orderItemList, function(item){
+            if (color === "lightgreen"){
+                color = "aliceblue";
+            }else{
+                color = "lightgreen";
+            }
+
+            let subItem = orderItemList[item];
+
+            let itemID = subItem.id;
+            let type;
+            if (itemID < 200){
+                type = "board";
+            }else{
+                type = "rpg";
+            }
+
+            var image = "Empty";
+            var name = "Empty";
+            let price_paid = subItem.price_paid;
+
+            total += price_paid;
+
+            let productList = products[type];
+
+            $.each(productList, function(i, product){
+                if (product.id === itemID){
+                    image = product.image;
+                    name = product.name;
+                    //return false;
+                }
+            });
+
+            orderBody(rowNum, name, image, price_paid, color);
+        });
+
+        orderTotal(rowNum, total);
+        rowNum++;
+
+    })
+
+}
+```
+
 A footer was created in the base HTML, which includes social media links and a copyright notice.
 
 ```sh
