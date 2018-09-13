@@ -92,7 +92,8 @@ function newItem(game,id){
 }
 ```
 The result is a responsive product description
- - add image here
+
+![Product Image and Description](Images/SSProductExample.PNG)
  
 The Account Details page was created as a separate HTML page, using the same CSS styling.
 
@@ -133,7 +134,10 @@ A footer was created in the base HTML, which includes social media links and a c
     <div class="footer-copyright text-center py-3">© 2018 Copyright: Neil Pirch/Dave Walsh</div>
 </footer>
 ```
- - add footer image here
+
+![Footer Screenshot](Images/CaptureFooter.PNG)
+
+
 ## Workflow
 David Walsh designed the layout of the web site, and implemented the original HTML code and javascript functionality. Neil Pirch added the Account Details page and worked on this report.
 
