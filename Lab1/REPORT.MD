@@ -108,7 +108,7 @@ A footer was created in the base HTML, which includes social media links and a c
                 <h2 class="text-uppercase">Super Real Store ;)</h2>
                 <p><em>We're totally not stealing your info.</em></p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-sm-push-6">
                 <ul class="list-unstyled text-left"><h4 class="text-uppercase">Connect:</h4>
                     <li>
                         <a href="#">
