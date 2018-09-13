@@ -132,15 +132,19 @@ $(document).ready(function(){
 
     //If the navigated page is the Orders page
 
+    $('#order_history').click(function(){
+        clearItems();
+        loadOrderPage(orders["orders"], db);
+    });
+
     //Logic for determining which product page to load
     $('.nav li').click(function(){
         clearItems();
-        if (this.id === "orders") loadOrderPage(orders["orders"], db);
 
         //Get the id of the div to select the product type
         let kind = this.id;
         //Select the items in the db that are of the selected product type
         let games = db[kind];
         buildPage(games);
-    })
+    });
 });
