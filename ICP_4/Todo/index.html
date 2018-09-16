@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="angularTodo" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo in Angular.js</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,500' rel='stylesheet'
+          type='text/css'>
+    <script src="https://use.fontawesome.com/21be5f2318.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script src="todo.js"></script>
+</head>
+<body ng-controller="angularTodoC">
+<div class="container">
+    <div class="todo-list">
+        <div class="todo-list-head"><h1>TO DO LIST FOR 2018</h1>
+            <form name="myForm" id="myForm">
+                <input name="txt" id="txt" ng-model="item.item" class="todo-list-head__text-input" placeholder="New Item">
+                <button class="todo-list-head__submit" ng-click="submitNewItem(item.item)">Submit</button>
+            </form>
+        </div>
+        <div class="todo-list__items">
+            <ul>
+                <li ng-class="{completed: item.completed}" ng-repeat="item in itemList">
+                    <span>{{itemList.indexOf(item)+1}}</span>
+                    {{item.item}}
+                    <div ng-click="completeItem(itemList.indexOf(item))" class="todo-list-item__complete">
+                        Done
+                    </div>
+                    <i ng-click="deleteItem(itemList.indexOf(item))" class="todo-list-item__trash fa fa-trash-o" ></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
