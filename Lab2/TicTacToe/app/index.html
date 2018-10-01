@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TicTacToe</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/bootstrap-theme.css">
+
+</head>
+<body>
+    <div class=container-fluid ng-controller="View1Ctrl">
+
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="row">
+                    <label>Grid size:</label><input placeholder="Enter the grid size (3-6)" ng-model="setSize"/>
+                    <label>Players:</label><input placeholder="Enter # of players (2-5)" ng-model="setPlayers"/>
+                    <button ng-click="newGame()">New Game</button>
+                </div>
+                <p></p>
+                <p></p>
+                <div class = "row" ng-show="!gameOver">
+                    <div class="col-sm-2 col-sm-offset-5">
+                        Player {{playerTurn}}'s turn
+                        <p></p>
+                    </div>
+                </div>
+                <div class = "row" ng-show="gameOver">
+                    <div class="col-sm-2 col-sm-offset-5">
+                        {{winString}}
+                        <p></p>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class="col-sm-12">
+                        <table>
+                            <tr ng-repeat="row in rows">
+                                <td ng-repeat="tile in row.list" ng-click="changeState(tile)">
+                                    <button class="btn-default btn" style="height: 50px; width: 50px; font-size: 36px; text-align: center; vertical-align: center; margin: 5px;">{{tile.state}}</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
