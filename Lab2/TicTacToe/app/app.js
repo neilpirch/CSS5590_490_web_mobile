@@ -21,10 +21,10 @@ angular.module('myApp', [])
       $scope.player = ["X","O","♠","☺","♪"]; //Set players characters for up to 5 players
 
       $scope.generateGrid = function(){
-          if($scope.setPlayers > $scope.player.length){
+          if(parseInt($scope.setPlayers) > $scope.player.length){
               alert("Players may not exceed: " + $scope.player.length);
               $scope.setPlayers=$scope.playerNum;
-          }else if($scope.setPlayers <= 1 ){
+          }else if(parseInt($scope.setPlayers) <= 1 ){
               alert("There must be at least 2 players.");
               $scope.setPlayers=$scope.playerNum;
           }
@@ -35,8 +35,9 @@ angular.module('myApp', [])
               $scope.setSize = $scope.gridSize;
           }
 
-          $scope.gridSize = $scope.setSize; //protect game setup variables from altering during the game
-          $scope.playerNum = $scope.setPlayers; //protect game setup variables from altering during the game
+          $scope.gridSize = parseInt($scope.setSize); //protect game setup variables from altering during the game
+          $scope.playerNum = parseInt($scope.setPlayers); //protect game setup variables from altering during the game
+          $scope.playerTurn = 1;
           let size = $scope.gridSize;
 
           //Iterate through numbers up to the set gridSize to create a square
