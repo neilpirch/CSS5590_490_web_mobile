@@ -3,18 +3,27 @@ angular.module('myApp', [])
 
     .controller('View1Ctrl', function ($scope) {
 
-      $scope.moveList = [];
-      $scope.possibleMoves = [];
+      //$scope.moveList = [];
+      //$scope.possibleMoves = [];
       $scope.tileList = [];
       $scope.gridSize = 3;
       $scope.playerNum = 2;
       $scope.playerTurn = 1;
-      $scope.gameOver = false;
       $scope.winner = 0;
       $scope.winString = "Everybody lost. N00bs.";
 
+      //Control the ng-show attribute
+      $scope.gameOver = false;
+
+      //Set up alternate classes for animation and coloring
+      $scope.playerClassList = ["flip","hinge"];
       $scope.classList = ["player1","player2","player3","player4","player5"];
+      $scope.winClassList = ["","bounceInDown"];
+
+      //Set the default ng-classes
+      $scope.player_class = $scope.playerClassList[0];
       $scope.turn = $scope.classList[0];
+      $scope.win_class = $scope.winClassList[0];
 
       $scope.setSize = 3;
       $scope.setPlayers = 2;
@@ -24,6 +33,8 @@ angular.module('myApp', [])
       $scope.player = ["X","O","♠","☺","♪"]; //Set players characters for up to 5 players
 
       $scope.generateGrid = function(){
+
+          //Logic to set the min and max player numbers
           if(parseInt($scope.setPlayers) > $scope.player.length){
               alert("Players may not exceed: " + $scope.player.length);
               $scope.setPlayers=$scope.playerNum;
@@ -32,9 +43,12 @@ angular.module('myApp', [])
               $scope.setPlayers=$scope.playerNum;
           }
 
-          //Logic to ensure that the game grid is a positive number
-          if($scope.setSize<1){
-              alert("Grid cannot be smaller than 1, and even that's rigged.");
+          //Logic to ensure that the game grid is a positive number and limits the max size
+          if($scope.setSize<3){
+              alert("Grid cannot be smaller than 3.");
+              $scope.setSize = $scope.gridSize;
+          }else if($scope.setSize>9){
+              alert("Grid cannot be greater than 9.");
               $scope.setSize = $scope.gridSize;
           }
 
@@ -63,6 +77,8 @@ angular.module('myApp', [])
           $scope.clearGrid();   //clear the board
           $scope.generateGrid();    //build a new board
           $scope.gameOver=false;    //reset the win conditions
+          $scope.player_class = $scope.playerClassList[0];  //reset the ng-classes for turn and endgame
+          $scope.win_class = $scope.winClassList[0];
           $scope.winner = 0;
           $scope.winString = "Everybody lost. N00bs.";
       }
@@ -193,16 +209,22 @@ angular.module('myApp', [])
 
           if(!movesLeft){
               $scope.gameOver=true;
+              //Set the animation classes for the endgame
+              $scope.win_class = $scope.winClassList[1];
+              $scope.player_class = $scope.playerClassList[1];
           }
       };
 
       $scope.setWin = function(char){
           $scope.winner = $scope.player.findIndex(x=>x===char) + 1;
           $scope.setWinString();
+          //Set the animation classes for the endgame
+          $scope.win_class = $scope.winClassList[1];
+          $scope.player_class = $scope.playerClassList[1];
       };
 
       $scope.setWinString = function(){
-          $scope.winString = "Player " + $scope.winner + " is the WINNAH WINNAH CHICKEN DINNAH!!!";
+          $scope.winString = "Player " + $scope.winner + " is the Winner!!!";
       };
 
     });
@@ -213,6 +235,7 @@ function Tile() {
     this.set = false;
 }
 
+//Create TileRow object to store a list of Tiles
 function TileRow(list){
     this.list = list;
 }
