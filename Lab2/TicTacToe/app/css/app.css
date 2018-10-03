@@ -1,0 +1,50 @@
+body{
+    background-image: url(../Images/tic_tac_toe.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    background-color: #000000;
+    background-attachment: fixed;
+}
+
+.bg{
+
+}
+
+.box{
+    position: relative;
+    text-align: center;
+    vertical-align: center;
+    width: 100%;
+    height: 75px;
+    line-height: 40px;
+    font-weight: 400;
+    margin: 0 0 10px;
+    border: 0;
+    padding: 0 14px;
+    outline: 0;
+    color: #000000;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.player1{
+    background: #2aabd2;
+}
+
+.player2{
+    background: #94FD90;
+}
+
+.player3{
+    background: #f0ad4e;
+}
+
+.player4{
+    background: #b92c28;
+}
+
+.player5{
+    background: #ffff00;
+}

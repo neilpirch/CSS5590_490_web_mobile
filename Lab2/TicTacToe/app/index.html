@@ -7,15 +7,20 @@
   <title>TicTacToe</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="CSS/bootstrap.css">
-    <link rel="stylesheet" href="CSS/bootstrap-theme.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
 
 </head>
-<body>
+<body class="bg">
     <div class=container-fluid ng-controller="View1Ctrl">
 
         <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
+            <div class="col-sm-6 d-flex justify-content-center">
                 <div class="row">
                     <label>Grid size:</label><input placeholder="Enter the grid size (3-6)" ng-model="setSize"/>
                     <label>Players:</label><input placeholder="Enter # of players (2-5)" ng-model="setPlayers"/>
@@ -23,21 +28,20 @@
                 </div>
                 <p></p>
                 <p></p>
-                <div class = "row" ng-show="!gameOver">
-                    <div class="col-sm-2 col-sm-offset-5">
-                        Player {{playerTurn}}'s turn
-                        <p></p>
+                <div class = "row animated hinge" ng-show="!gameOver">
+                    <div class="col-sm-2 col-sm-offset-5 box" ng-class="turn">
+                        <h1 class="display-4">Player {{playerTurn}}'s turn</h1>
                     </div>
                 </div>
                 <div class = "row" ng-show="gameOver">
-                    <div class="col-sm-2 col-sm-offset-5">
+                    <div class="col-sm-2 col-sm-offset-5 box">
                         {{winString}}
                         <p></p>
                     </div>
                 </div>
                 <div class = "row">
                     <div class="col-sm-12">
-                        <table>
+                        <table align="center">
                             <tr ng-repeat="row in rows">
                                 <td ng-repeat="tile in row.list" ng-click="changeState(tile)">
                                     <button class="btn-default btn" style="height: 50px; width: 50px; font-size: 36px; text-align: center; vertical-align: center; margin: 5px;">{{tile.state}}</button>
@@ -54,8 +58,18 @@
 
 
     </div>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
     <script src="app.js"></script>
+
 
 </body>
 </html>

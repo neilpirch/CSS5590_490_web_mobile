@@ -13,6 +13,9 @@ angular.module('myApp', [])
       $scope.winner = 0;
       $scope.winString = "Everybody lost. N00bs.";
 
+      $scope.classList = ["player1","player2","player3","player4","player5"];
+      $scope.turn = $scope.classList[0];
+
       $scope.setSize = 3;
       $scope.setPlayers = 2;
 
@@ -87,6 +90,8 @@ angular.module('myApp', [])
           }else{
               $scope.playerTurn++; //Increment the turn
           }
+
+          $scope.turn = $scope.classList[$scope.playerTurn-1]; //set the css for changing player turns
       };
 
       $scope.checkWin = function(){
