@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="CalculatorApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="calculator.js"></script>
+</head>
+<body ng-controller="CalculatorController">
+<div class="container-fluid">
+    <div class="row">
+        <div class="box col-sm-2 offset-sm-5" style="position: absolute; top: 25%">
+            <div class="row">
+                <input ng-model="displayObj.display" id="display" class="col-sm-12 text-right" placeholder="0" disabled>
+            </div>
+            <div class="row">
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickNumber(7)">7</button>
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickNumber(8)">8</button>
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickNumber(9)">9</button>
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickOp('/')">/</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickNumber(4)">4</button>
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickNumber(5)">5</button>
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickNumber(6)">6</button>
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickOp('*')">*</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickNumber(1)">1</button>
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickNumber(2)">2</button>
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickNumber(3)">3</button>
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickOp('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickNumber(0)">0</button>
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-6" ng-click="equals()">=</button>
+                <button class="btn btn-sm btn-default btn-outline-dark col-sm-3" ng-click="clickOp('-')">-</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
