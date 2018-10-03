@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4391c221-ffee-47dc-9aab-a09fb359b1ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Thin.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToe/app/font/roboto/Roboto-Thin.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToe/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToe/app/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/app/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToe/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToe/app/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -89,8 +66,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TicTacToe/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4029">
-              <caret line="237" column="48" selection-start-line="237" selection-start-column="48" selection-end-line="237" selection-end-column="48" />
+            <state relative-caret-position="738">
+              <caret line="238" selection-start-line="238" selection-end-line="240" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -224,12 +201,12 @@
       <option name="presentableId" value="Default" />
       <updated>1538501914195</updated>
       <workItem from="1538501915582" duration="753000" />
-      <workItem from="1538532375400" duration="8786000" />
+      <workItem from="1538532375400" duration="9700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9539000" />
+    <option name="totallyTimeSpent" value="10453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -280,8 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TicTacToe/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4029">
-          <caret line="237" column="48" selection-start-line="237" selection-start-column="48" selection-end-line="237" selection-end-column="48" />
+        <state relative-caret-position="738">
+          <caret line="238" selection-start-line="238" selection-end-line="240" selection-end-column="1" />
         </state>
       </provider>
     </entry>
