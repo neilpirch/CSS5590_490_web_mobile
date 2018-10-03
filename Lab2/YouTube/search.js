@@ -1,12 +1,21 @@
 var url = "https://www.googleapis.com/youtube/v3/";
 var apiKey = "AIzaSyBhAcbOBlU7lepVO-jyqtq7g1j9lRhT-_c";
+let videoString = "https://www.youtube.com/embed/";
 
 angular.module('searchApp', [])
 
-    .controller('searchController', function ($scope, $http) {
+    .config(function($sceDelegateProvider) {
+        $sceDelegateProvider.resourceUrlWhitelist([
+            'self',
+            'https://www.youtube.com/**'
+        ]);
+    })
+
+    .controller('searchController', function($scope, $http) {
 
         $scope.query = "";
         $scope.searchResult = "";
+        $scope.videoID = "rG_ry1hkFXg";
 
         $scope.search = function () {
             console.log("search clicked");
@@ -26,6 +35,12 @@ angular.module('searchApp', [])
                     alert("There was some error processing your request.")
                 });
             }
+        };
+
+        $scope.setVideo = function(id){
+            $scope.videoID = videoString+$scope.videoID;
         }
     });
+
+
 
