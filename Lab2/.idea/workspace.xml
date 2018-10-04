@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4391c221-ffee-47dc-9aab-a09fb359b1ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/YouTube/images/yt_logo_rgb_light.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YouTube/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/YouTube/js/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YouTube/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/YouTube/search.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YouTube/youtubesearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/YouTube/youtubesearch.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -43,30 +40,30 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="265" />
-          <entry key="html" value="2585" />
-          <entry key="js" value="1347" />
+          <entry key="html" value="3749" />
+          <entry key="js" value="2323" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="265" />
-          <entry key="HTML" value="2585" />
-          <entry key="JavaScript" value="1347" />
+          <entry key="HTML" value="3749" />
+          <entry key="JavaScript" value="2323" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YouTube/youtubesearch.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+            <state relative-caret-position="1122">
+              <caret line="66" column="87" selection-start-line="66" selection-start-column="87" selection-end-line="66" selection-end-column="87" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#3001#3008#1" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3644#3651#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YouTube/js/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="46" column="51" lean-forward="true" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+            <state relative-caret-position="772">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
@@ -93,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TicTacToe/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1010">
-              <caret line="84" selection-start-line="84" selection-end-line="94" selection-end-column="96" />
+            <state relative-caret-position="313">
+              <caret line="40" column="63" lean-forward="true" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="63" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -120,9 +117,9 @@
         <option value="$PROJECT_DIR$/TicTacToe/app/index.html" />
         <option value="$PROJECT_DIR$/TicTacToe/app/app.js" />
         <option value="$PROJECT_DIR$/YouTube/search.js" />
-        <option value="$PROJECT_DIR$/YouTube/youtubesearch.html" />
         <option value="$PROJECT_DIR$/YouTube/search.css" />
         <option value="$PROJECT_DIR$/YouTube/js/search.js" />
+        <option value="$PROJECT_DIR$/YouTube/youtubesearch.html" />
       </list>
     </option>
   </component>
@@ -228,7 +225,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27658000" />
+    <option name="totallyTimeSpent" value="29889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -281,28 +278,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/YouTube/search.js" />
-    <entry file="file://$PROJECT_DIR$/TicTacToe/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="84" selection-start-line="84" selection-end-line="94" selection-end-column="96" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YouTube/youtubesearch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3001#3008#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YouTube/search.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -312,8 +287,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/YouTube/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="46" column="51" lean-forward="true" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+        <state relative-caret-position="772">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TicTacToe/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="40" column="63" lean-forward="true" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YouTube/youtubesearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="87" selection-start-line="66" selection-start-column="87" selection-end-line="66" selection-end-column="87" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3644#3651#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
