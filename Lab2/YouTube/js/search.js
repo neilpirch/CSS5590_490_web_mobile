@@ -30,6 +30,7 @@ angular.module('searchApp', [])
                     "&key=" + apiKey +
                     "&maxResults=" + "20");
                 handler.success(function (response) {
+                    $scope.transit();
                     console.log(response);
                     $scope.searchResult = response.items;
                     //$('#search-container').html('<pre>' + str + '</pre>');
@@ -39,6 +40,15 @@ angular.module('searchApp', [])
                 });
             }
         };
+
+        $scope.transit = function(){
+           // let vOffset = $('#logo').;
+           //$('#top').animate({top: -vOffset});
+            $('.logo').css("position", "relative");
+            $('.logo').css("top", "0");
+            $('.logo').css("left", "0");
+            $('.logo').css("transform", "translate(0%,0%)");
+        }
 
         $scope.setVideo = function(id,title){
             var src = videoString + id;
