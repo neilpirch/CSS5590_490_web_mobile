@@ -4,19 +4,20 @@ let videoString = "https://www.youtube.com/embed/";
 
 
 angular.module('searchApp', [])
-
+/*
     .config(function($sceDelegateProvider) {
         $sceDelegateProvider.resourceUrlWhitelist([
             'self',
             'https://www.youtube.com/**'
         ]);
-    })
+    })*/
 
     .controller('searchController', function($scope, $http) {
 
         $scope.query = "";
         $scope.searchResult = "";
         $scope.videoID = "rG_ry1hkFXg";
+        $scope.title = "";
 
         $scope.search = function () {
             console.log("search clicked");
@@ -39,10 +40,12 @@ angular.module('searchApp', [])
             }
         };
 
-        $scope.setVideo = function(id){
+        $scope.setVideo = function(id,title){
             var src = videoString + id;
+            $scope.title = title;
             $('#videoModal').modal('show');
             $('#YouTubeVideo').attr('src', src);
+
         };
 
         $scope.closeModal = function () {
