@@ -2,6 +2,7 @@ var url = "https://www.googleapis.com/youtube/v3/";
 var apiKey = "AIzaSyBhAcbOBlU7lepVO-jyqtq7g1j9lRhT-_c";
 let videoString = "https://www.youtube.com/embed/";
 
+
 angular.module('searchApp', [])
 
     .config(function($sceDelegateProvider) {
@@ -25,7 +26,8 @@ angular.module('searchApp', [])
                     "part=" + "snippet" +
                     "&q=" + $scope.query +
                     "&type=" + "" +
-                    "&key=" + apiKey);
+                    "&key=" + apiKey +
+                    "&maxResults=" + "20");
                 handler.success(function (response) {
                     console.log(response);
                     $scope.searchResult = response.items;
@@ -38,8 +40,14 @@ angular.module('searchApp', [])
         };
 
         $scope.setVideo = function(id){
-            $scope.videoID = videoString+$scope.videoID;
-        }
+            var src = videoString + id;
+            $('#videoModal').modal('show');
+            $('#YouTubeVideo').attr('src', src);
+        };
+
+        $scope.closeModal = function () {
+            $('#videoModal iframe').removeAttr('src');
+        };
     });
 
 
